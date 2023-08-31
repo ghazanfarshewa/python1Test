@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 class="h1">Blog posts</h1>
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+  
+<ul>
+    
+    {% for y in mymembers %}
+    <li> Title: {{ y.title }} <br> Content about: {{ y.content }} <br> Publication date: {{ y.pub_date }}</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
